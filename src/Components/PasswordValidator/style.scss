@@ -1,0 +1,37 @@
+@import "../../Assets/variables";
+
+.PasswordValidator {
+  width: 48%;
+
+  .containerValidators {
+    p {
+      margin-bottom: 10px;
+
+      .icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px;
+        position: relative;
+        color: $white;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+
+        &.tick {
+          background-color: $green;
+          &::before {
+            content: "\2713";
+          }
+        }
+
+        &.cross {
+          background-color: $red;
+          &::before {
+            content: "\2717";
+          }
+        }
+      }
+    }
+  }
+}

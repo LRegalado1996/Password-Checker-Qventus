@@ -1,0 +1,11 @@
+@import "../../Assets/variables";
+
+.PasswordCheckerPage {
+  width: 90%;
+  margin: 10px auto;
+  .passwordCheckerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
