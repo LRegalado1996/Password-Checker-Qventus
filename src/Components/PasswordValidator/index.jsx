@@ -33,7 +33,7 @@ const numberRegex = /[0-9]/;
 const uppercaseLetterRegex = /[A-Z]/;
 const consecutiveLettersRegex = /[a-zA-Z]{2}/;
 
-const PasswordValidator = ({ value, options }) => {
+const PasswordValidator = ({ value, options, customStyles={} }) => {
   const [validators, setValidators] = useState({});
 
   const checkPassword = () => {
@@ -115,7 +115,7 @@ const PasswordValidator = ({ value, options }) => {
   };
 
   return (
-    <div className="PasswordValidator">
+    <div className="PasswordValidator" style={customStyles}>
       <div className="containerValidators">{allValidators()}</div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.scss";
 
-const Input = ({ label, placeholder, value, onChange }) => {
+const Input = ({ label, placeholder, value, onChange, customStyles={} }) => {
   return (
-    <div className="Input">
+    <div className="Input" style={customStyles}>
       {label && <label className="inputLabel">{label}</label>}
       <input
         type="text"
