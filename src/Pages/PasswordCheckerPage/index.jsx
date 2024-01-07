@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Title, Input } from "../../Components";
+import { Title, Input, PasswordValidator } from "../../Components";
 import "./style.scss";
 
 const PasswordCheckerPage = () => {
@@ -20,6 +20,8 @@ const PasswordCheckerPage = () => {
           value={inputValue}
           onChange={handleInputChange}
         />
+
+        <PasswordValidator />
       </div>
     </div>
   );
