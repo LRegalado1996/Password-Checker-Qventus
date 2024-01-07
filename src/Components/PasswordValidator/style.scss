@@ -19,14 +19,14 @@
         align-items: center;
 
         &.tick {
-          background-color: green;
+          background-color: $green;
           &::before {
             content: "\2713";
           }
         }
 
         &.cross {
-          background-color: red;
+          background-color: $red;
           &::before {
             content: "\2717";
           }
