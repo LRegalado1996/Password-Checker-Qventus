@@ -1,10 +1,11 @@
 import React from "react";
+import { Title } from "../../Components";
 import "./style.scss";
 
 const PasswordCheckerPage = () => {
   return (
     <div className="PasswordCheckerPage">
-      <h1>Hello</h1>
+      <Title name={"Password Component"} />
     </div>
   );
 };
