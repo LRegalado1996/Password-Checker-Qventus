@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { Title, Input, PasswordValidator } from "../../Components";
 import "./style.scss";
 
+const passwordReqs = {
+  specialCharacters: true,
+  number: true,
+  uppercaseLetter: true,
+  noConsecutiveLetters: true,
+};
+
 const PasswordCheckerPage = () => {
   const [inputValue, setInputValue] = useState("");
 
@@ -16,12 +23,12 @@ const PasswordCheckerPage = () => {
       <div className="passwordCheckerContainer">
         <Input
           label=""
-          placeholder="Ingrese su nombre"
+          placeholder="Add your password"
           value={inputValue}
           onChange={handleInputChange}
         />
 
-        <PasswordValidator />
+        <PasswordValidator value={inputValue} options={passwordReqs} />
       </div>
     </div>
   );
