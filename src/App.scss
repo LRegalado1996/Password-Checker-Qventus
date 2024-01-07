@@ -1,0 +1,10 @@
+@import "./Assets/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: $defaultTextSize;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
